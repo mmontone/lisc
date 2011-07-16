@@ -1,0 +1,23 @@
+program testdiv
+
+ok : "la division funciona OK!!!";
+bad : "la division no funciona :(";
+
+int a;
+int b;
+int c;
+int x;
+begin
+  a = 12;
+  b = 4;
+  c = 3;
+  x = a / b / c ;
+  if x == 1 then
+  begin
+    write ok
+  end
+  else
+  begin
+    write bad
+  end
+end

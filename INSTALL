@@ -1,0 +1,23 @@
+Este archivo contiene instrucciones para compilar LISC desde los fuentes (el archivo lisc-2.0-bin.tar.gz contiene la version ya compilada)
+
+Prerequisitos:
+* El archivo lisc-2.0-src.tar.gz
+* Alguna version de linux
+* El compilador GHC (Glasgow Haskell Compiler) version 6.2 o superior (probablemente tambien funcione desde la version 5)
+* El compilador de assembler NASM (Newwide Assembler Compiler) (normalmente viene incluido con la distribucion de linux)
+* Alguna version de la libreria GMP (Multipresicion arithmetic library) version development (Normalmente viene en la distribucion de Linux, en mi caso se llama libgmp3-dev)
+
+Instalacion:
+* Descomprima el archivo con los fuentes
+$ gunzip -c lisc-2.0-src.tar.gz |tar -xf -
+* Entre al directorio y ejecute make
+$ cd lisc-2.0-src
+$ make
+
+Para limpiar:
+$ make clean
+
+Para compilar los ejemplos:
+$ cd examples
+$ make
+

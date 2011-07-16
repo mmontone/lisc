@@ -1,0 +1,10 @@
+program infrec
+
+proc rec()
+begin
+  rec()
+end
+
+begin
+  rec()
+end

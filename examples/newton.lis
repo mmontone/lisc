@@ -1,0 +1,45 @@
+program newton
+
+'calcula el binomio de newton : (a + b)^n
+
+fun fact (int x): int
+begin
+  if x <= 1 then return 1 else return x * fact (x-1);
+end;
+
+fun comb (int n; int m):int
+begin
+  return fact(n) / (fact (m) * fact (n-m));
+end;
+
+fun power (int x; int pow):int
+begin
+  if pow <= 0 then return 1
+  else return x * power (x, pow - 1);
+end;
+
+fun bini (int a; int b; int i;int n): int
+begin
+   return power(a,i) * power(b,n-i) * comb(n,i);
+end;
+
+int res;
+int cont;
+
+'calcula (1+1)^3
+a : 2;
+b : 1;
+n : 4
+
+begin
+   res = 0;
+   cont = n;
+   while cont >= 0 do
+   begin
+     res = res + bini(a,b,cont,n);
+     cont = cont - 1;
+   end;	
+   write "El resultado es: ";
+   writenum res;
+   writeln;
+end

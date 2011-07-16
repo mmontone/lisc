@@ -1,0 +1,6 @@
+program infinite
+begin
+  while True do
+  begin
+  end
+end

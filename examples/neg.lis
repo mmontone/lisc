@@ -1,0 +1,6 @@
+program neg
+x : -20;
+
+begin
+	writenum x / 2; writeln;
+end

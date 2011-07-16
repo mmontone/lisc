@@ -1,0 +1,18 @@
+program factorial
+fun fact (int x) : int
+begin
+	if x == 1 then
+		return 1
+	else
+		return x * fact (x - 1)
+end;
+
+x : 6
+
+begin
+	write "el factorial de ";
+	writenum x;
+	write " es ";
+	writenum fact(x);
+	writeln;
+end

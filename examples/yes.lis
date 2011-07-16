@@ -1,0 +1,8 @@
+program yesmain
+yes : " yes "
+begin
+  while True do
+  begin
+     write yes
+  end
+end 

@@ -1,0 +1,26 @@
+Este programa es un compilador del lenguaje LIS (Lenguaje Imperativo Simple)
+
+Para ver como instalar el compilador por favor vea el archivo INSTALAR
+
+Modo de uso:
+
+Para compilar:
+
+$ ./lisc <archivo.lis>
+
+Para obtener ayuda sobre los comandos disponibles:
+
+$ ./lisc -h
+
+Para compilar los ejemplos:
+
+$ cd examples
+$ make
+
+Para borrar los ejemplos compilados:
+
+$ cd examples
+$ make clean
+
+
+

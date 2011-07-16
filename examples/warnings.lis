@@ -1,0 +1,12 @@
+program warnings
+int a;
+int b;
+
+proc nollamado()
+begin
+  a = 5
+end
+
+begin
+  b = a
+end

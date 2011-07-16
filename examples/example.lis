@@ -1,0 +1,63 @@
+'------------------
+'Programa de prueba
+'------------------
+
+program example
+  ' Una constante (las constantes se declaran con ':')
+  a : 3 > 2; 
+  'a : 3;
+  b : 2;
+  c : True;
+  ' Una variable
+  'bool x; 
+proc nomeves()
+ 'a : 2;
+ int x;
+begin
+  'Se asigna con '='
+  'x = a;
+end;
+
+fun myFun() : int
+begin
+  return 1;
+end;
+
+proc hola()
+'Este procedimiento es interno (no hay duplicacion)
+  'proc nomeves(int a)
+  'begin
+  'end;
+int x;
+begin
+  x = 2;
+  write "hola";
+end;
+
+begin
+  if a then
+  begin
+     write "3 es mayor que 2"; writeln
+  end;
+  if c then
+  begin
+	write "c es verdadero"; writeln
+  end;
+  
+  'Los bloques de los ifs son obligatorios
+  if 3 == 2 then
+  begin
+    write "hello";
+  end;
+  while 2 > 3 do
+  begin
+    'x = a;
+  end;
+  
+  'x = a;
+  
+  'write "hello";
+  
+  'Llamada a procedimiento
+  hola();
+end
